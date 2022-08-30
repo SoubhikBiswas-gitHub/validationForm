@@ -121,7 +121,7 @@ const checkAndSubmit = () => {
   if (
     mobNumberInput &&
     mobNumberInput.length === 10 &&
-    mobNumberInput.charAt(0) != " "
+    mobNumberInput.charAt(0) != " "&&mobNumberInput.charAt(0) != "+"&&mobNumberInput.charAt(0) !="0"
   ) {
     if (mobNumberInput.includes("+") || mobNumberInput.includes("-")) {
       document.getElementById("mob-invalid").innerText =
