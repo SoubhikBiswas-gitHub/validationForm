@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ValidationForm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="card mb-3 outer_card" style="max-width: 100%; margin-top: 20px;">
+                <div class=" h2 fw-bold bolder align-middle header_">Registration Form</div>
+                <div class="card-body ">
+                    <form class="row">
+                        <div class="row row_util">
+                            <div class="col-md-6 ">
+                                <label for="fname-input" class="form-label">First name <span
+                                        class="mandetory">*</span></label>
+                                <input type="text" class="form-control util_input" id="fname-input">
+                                <div class="valid-feedback" id="fname-valid">Looks good !</div>
+                                <div class="invalid-feedback" id="fname-invalid">Please enter valid First Name !</div>
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <label for="lname-input" class="form-label">Last name <span
+                                        class="mandetory">*</span></label>
+                                <input type="text" class="form-control util_input " id="lname-input">
+                                <div class="valid-feedback" id="lname-valid">Looks good !</div>
+                                <div class="invalid-feedback" id="lname-invalid">Please enter valid Last Name !</div>
+                            </div>
+                        </div>
+
+                        <div class="row row_util">
+                            <div class="col-md-6">
+                                <label for="email-input" class="form-label">Email <span
+                                        class="mandetory">*</span></label>
+                                <div class="input-group has-validation util_input">
+                                    <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                                    <input type="text" class="form-control " id="email-input"
+                                        style="border-radius: 0 5px 5px 0">
+                                </div>
+                                <div class="valid-feedback" id="email-valid">Looks good !</div>
+                                <div class="invalid-feedback" id="email-invalid">Please enter valid Mail !
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-6">
+                                <label for="mob-input" class="form-label">Phone Number <span
+                                        class="mandetory">*</span></label>
+                                <div class="input-group has-validation util_input">
+                                    <span class="input-group-text" id="inputGroupPrepend3">+91</span>
+                                    <input type="number" class="form-control " id="mob-input"
+                                        style="border-radius: 0 5px 5px 0">
+                                </div>
+                                <div class="valid-feedback" id="mob-valid">Looks good !</div>
+                                <div class="invalid-feedback" id="mob-invalid">Please enter valid Phone Number !
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row row_util">
+                            <div class="col-md-6">
+                                <label for="batch-input" class="form-label">Batch No. <span
+                                        class="mandetory">*</span></label>
+                                <select class="form-select" id="batch-input">
+                                    <option selected disabled default value="">Select...</option>
+                                    <option>Batch No - 01</option>
+                                    <option>Batch No - 02</option>
+                                    <option>Batch No - 03</option>
+                                    <option>Batch No - 04</option>
+                                    <option>Batch No - 05</option>
+                                    <option>Batch No - 06</option>
+                                    <option>Batch No - 07</option>
+                                    <option>Batch No - 08</option>
+                                    <option>Batch No - 09</option>
+                                    <option>Batch No - 10</option>
+                                    <option>Batch No - 11</option>
+                                    <option>Batch No - 12</option>
+                                    <option>Batch No - 13</option>
+                                    <option>Batch No - 14</option>
+                                    <option>Batch No - 15</option>
+                                    <option>Batch No - 16</option>
+                                    <option>Batch No - 17</option>
+                                    <option>Batch No - 18</option>
+                                    <option>Batch No - 19</option>
+                                    <option>Batch No - 20</option>
+                                </select>
+                                <div class="valid-feedback" id="batch-valid">Looks good !</div>
+                                <div class="invalid-feedback" id="batch-invalid">Please select a valid Batch no. !</div>
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <label for="module-input" class="form-label">Current Module <span
+                                        class="mandetory">*</span></label>
+                                <select class="form-select" id="module-input">
+                                    <option selected disabled default value="">Select...</option>
+                                    <option>Module 1 DSA</option>
+                                    <option>Module 2 DSA</option>
+                                    <option>Module 3 DSA</option>
+                                    <option>Module 4 DSA</option>
+                                    <option>Module 5 FrontEnd</option>
+                                    <option>Module 6 FrontEnd</option>
+                                    <option>Module 7 FrontEnd</option>
+                                    <option>Module 8 BackEnd</option>
+                                </select>
+                                <div class="valid-feedback" id="module-valid">Looks good !</div>
+                                <div class="invalid-feedback" id="module-invalid">Please select a valid Module Name!
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row row_util">
+                            <div class="col-md-6">
+                                <input class="form-check-input" type="checkbox" value="" id="tNc-input">
+                                <label class="form-check-label" for="tNc-input">Agree to terms and conditions <span
+                                        class="mandetory">*</span></label>
+                                <div class="valid-feedback" id="tNc-valid">Looks good !</div>
+                                <div class="invalid-feedback" id="tNc-invalid">You must be agree before submitting !
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 sBtn" style="margin-top: 15px;">
+                            <input type="button" class="btn btn-secondary" value="Submit" onclick="checkAndSubmit()">
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
